@@ -7,9 +7,10 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.ViewConfiguration
 import androidx.core.content.res.ResourcesCompat
-import com.example.canvaspaint_lytnevaag.data.COLOR
-import com.example.canvaspaint_lytnevaag.data.TOOLS
-import com.example.canvaspaint_lytnevaag.ui.CanvasViewState
+import com.example.canvas.data.COLOR
+import com.example.canvas.data.TOOLS
+import com.example.canvas.ui.CanvasViewState
+
 import kotlin.math.abs
 
 
@@ -18,9 +19,8 @@ class DrawView @JvmOverloads constructor(
 
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
-)
+) : View(context, attrs, defStyleAttr) {
 
-    : View(context, attrs, defStyleAttr) {
     companion object {
         private const val STROKE_WIDTH = 12f
     }
@@ -48,7 +48,6 @@ class DrawView @JvmOverloads constructor(
 
 
     private var onClick: () -> Unit = {}
-
 
 
     private val paint = Paint().apply {
