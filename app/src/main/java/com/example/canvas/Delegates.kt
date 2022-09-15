@@ -41,7 +41,7 @@ fun sizeAdapterDelegate(
         val size: TextView = findViewById(R.id.size)
 //        val sizeImage:ImageView = findViewById(R.id.sizeImage)
         itemView.setOnClickListener { onClick(adapterPosition) }
-        // bind - это является функция из обычного адаптера onBind, логика которая происодит внутри
+
         bind { list ->
 
             size.text = item.size.toString()
