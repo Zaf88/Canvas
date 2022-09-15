@@ -9,10 +9,11 @@ import androidx.core.view.isVisible
 import com.example.canvas.data.TOOLS
 import com.example.canvas.model.Item
 import com.example.canvas.model.ToolItem
+import com.hannesdorfmann.adapterdelegates4.AdapterDelegate
+import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateLayoutContainer
+//class Delegates
 
-class Delegates
 
-//AdapterDelegate Заменяет адаптер, который мы писали в новостном
 fun colorAdapterDelegate(
     onClick: (Int) -> Unit
 ): AdapterDelegate<List<Item>> =
@@ -21,7 +22,7 @@ fun colorAdapterDelegate(
     ) {
         val color: ImageView = findViewById(R.id.color)
         itemView.setOnClickListener { onClick(adapterPosition) }
-        // bind - это является функция из обычного адаптера onBind, логика которая происодит внутри
+
         bind { list ->
             color.setColorFilter(
                 context.resources.getColor(item.color, null),
