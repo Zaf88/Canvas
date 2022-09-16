@@ -1,7 +1,7 @@
 package com.example.canvas
 
 import android.graphics.PorterDuff
-import android.system.Os.bind
+
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -11,7 +11,6 @@ import com.example.canvas.model.Item
 import com.example.canvas.model.ToolItem
 import com.hannesdorfmann.adapterdelegates4.AdapterDelegate
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateLayoutContainer
-//class Delegates
 
 
 fun colorAdapterDelegate(

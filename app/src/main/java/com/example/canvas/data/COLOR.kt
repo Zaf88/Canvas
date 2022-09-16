@@ -19,7 +19,7 @@ enum class COLOR(
     LIME (R.color.lime),
     TEAL (R.color.teal),
     GREEN (R.color.green),
-    LIGHTBLUE (R.color.blue),
+    LIGHT_BLUE (R.color.blue),
     BLUE(R.color.purple_700),
     NAVY (R.color.navy),
     BLACK(R.color.black),

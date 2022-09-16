@@ -10,7 +10,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
     companion object {
-        private const val PALLETE_VIEW = 0
+        private const val PALETTE_VIEW = 0
         private const val TOOLS_VIEW = 2
         private const val SIZE_VIEW = 1
     }
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
 
 private fun render(viewState: ViewState) {
-    with(toolsList[PALLETE_VIEW]) {
+    with(toolsList[PALETTE_VIEW]) {
         render(viewState.colorList)
         isVisible = viewState.isPaletteVisible
     }
